@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Esto es CSS*/
+        #titulo-muy-especial{
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+
+        
+        }
+        /*Selector por nombre etiqueta*/
+        /*Se puede combinar tambien los selectores con coma*/
+        h1,h2,h3,h4{
+            margin: 5px;
+            padding: 10px 20px 30px 40px;
+            padding-top: 1px;
+            padding-right: 2px;
+            padding-bottom: 10px;
+            padding: 10px;
+            border: green 5px solid;
+            border-color: green;
+            border-width: 1px;
+            border-style: dashed;
+
+        }
+        .lista-ordenada-mayusculas{
+            list-style-type: upper-alpha;
+        }
+        .lista-ordenada-romana{
+            list-style-type: upper-roman;
+        }
+        li > a{
+            background-color: orange;
+        }
+        /*Seudo clase - Ul tiene hijo LI*/
+        /*Hover -> paso el mouse*/
+        ul > li:hover{
+            background-color: brown;
+       
+        }
+        /*first child -> primer hijo*/
+        ul > li:first-child{
+            background-color: red;
+        
+        }
+        /*nth-child(n) -> solo al N hijo */
+        ul > li:nth-child(4)
+        {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo-muy-especial"
+    style="
+    color:white;
+    background-color:black;
+    " >
+    My first heading</h1>
+    <h2>My first heading</h2>
+    <h3>My first heading</h3>
+    <h4>My first heading</h4>
+    <p>My first parrafo</p>
+    <a href="www-google.com" target="_blank"> Google</a>
+    <ul>
+        <li><a href="/index.html">
+            Home
+        </a>
+    </li>
+        <li>
+            <a href="/a-tablas-anclas.html">
+                Tablas y anclas
+            </a>
+        </li>
+    </ul>
+    <ol class="lista-ordenada-mayusculas"> 
+        <li>
+            Lunes
+            <ol class="lista-ordenada-romana">
+                <li>
+                    <a href="/a-tablas-anclas.html">
+                        Tablas y anclas
+                    </a>
+                </li> 
+                <li>a</li>
+                <li>b</li>
+                <li>c</li> 
+            </ol>
+        </li>
+        <li>Martes</li>
+        <li>Miercoles</li>
+        <p>Submenu</p>
+        
+    </ol>
+    <p>Links internos</p>
+
+    <ul>
+        <li><a href="#parrafo1">Ir parrafo 1</a></li>
+        <li><a href="#parrafo2">Ir parrafo 2</a></li>
+    </ul>
+
+    <p id="parrafo1">Parrafo 1</p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p id="parrafo2">Parrafo 2</p>
+
+    <h2> Imagenes </h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcg3ZFcL6sAObKAc8xIpvKpk5T-pYqpIbb7w&s"
+         alt="Loro colores">
+    <table>
+
+        <tr>
+            <th>
+
+                Nombre
+            </th>
+            <th>Apellido</th>
+            <th>Nota</th>
+
+        </tr>
+
+        <tr>
+            <td>
+                Jimmy
+            </td>
+            <td>Damian</td>
+            <td>1</td>
+        </tr>
+        
+
+    </table>
+</body>
+</html>

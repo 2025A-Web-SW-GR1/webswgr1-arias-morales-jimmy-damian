@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temu - Página Inicial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .topbar {
+      background-color: #000;
+      color: white;
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+    }
+    .topbar span {
+      margin-right: 1rem;
+    }
+    .navbar-danger {
+      background-color: #d0011b !important;
+    }
+    .navbar {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    .navbar .form-control {
+      border-radius: 50px;
+      padding-left: 1rem;
+    }
+    .navbar .btn-search {
+      border-radius: 50%;
+      width: 38px;
+      height: 38px;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+    }
+    .navbar .search-wrapper {
+      display: flex;
+      background-color: white;
+      border-radius: 50px;
+      padding: 2px;
+      overflow: hidden;
+    }
+    .navbar-brand img {
+      width: 40px;
+    }
+    .icon-circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #007a1e;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+    .cart-badge {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background: #ffc107;
+      color: #fff;
+      font-size: 0.7rem;
+      border-radius: 50%;
+      padding: 0.2em 0.45em;
+      font-weight: bold;
+    }
+    .banner {
+      background-image: url('https://images.unsplash.com/photo-1568535904307-f48b760a39f3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJpZ2h0JTIwcmVkfGVufDB8fDB8fHww');
+      background-size: cover;
+      background-position: center;
+      padding: 5rem 1rem;
+      color: white;
+    }
+    .banner h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1.2;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+    .banner span {
+      font-style: italic;
+      background-color: #ffc107;
+      color: #d0011b;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+    .banner .btn {
+      background-color: black;
+      color: white;
+      border-radius: 30px;
+      font-weight: bold;
+      padding: 0.5rem 1.5rem;
+      border: none;
+    }
+    .secure-bar {
+      background-color: #007a1e;
+      color: white;
+      font-size: 0.9rem;
+      padding: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra superior -->
+  <div class="topbar d-flex justify-content-between flex-wrap">
+    <span>Envío gratis en cada pedido</span>
+    <span>Entrega garantizada</span>
+    <span>Descarga la app de Temu</span>
+  </div>
+
+  <!-- Header principal -->
+  <nav class="navbar navbar-expand-lg navbar-danger px-4">
+    <a class="navbar-brand text-white d-flex align-items-center" href="#">
+      <img src="https://www.pngall.com/wp-content/uploads/17/Temu-Logo-Unique-Visual-Identity-PNG-300x225.png" alt="Temu Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link text-white" href="#">👍 Artículos más vendidos</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">💬 5 estrellas</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Categorías</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Electrónica</a></li>
+            <li><a class="dropdown-item" href="#">Ropa</a></li>
+          </ul>
+        </li>
+      </ul>
+    <!-- Derecha header principal -->
+      <div class="search-wrapper me-2">
+        <input class="form-control border-0" type="search" placeholder="música">
+        <button class="btn-search">🔍</button>
+      </div>
+      <a class="nav-link text-white me-2 d-flex align-items-center" href="#"><div class="icon-circle">👤</div>Pedidos y cuenta</a>
+      <a class="nav-link text-white me-2" href="#">🛟 Ayuda</a>
+      <a class="nav-link text-white me-2" href="#">🇪🇸 ES</a>
+      <div class="position-relative">
+        <a class="nav-link text-white" href="#">🛒</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner principal -->
+  <div class="banner text-center">
+    <h1>1er Aniversario <span>Ofertas</span><br>HASTA 90% OFF</h1>
+    <button class="btn mt-4">COMPRA YA &gt;</button>
+  </div>
+
+  <!-- Seguridad -->
+  <div class="secure-bar text-center">
+    <span>🔒 Privacidad segura</span> | 
+    <span>💳 Pagos seguros</span> | 
+    <span>🚚 Entrega garantizada</span>
+  </div>
+
+  <!-- Alertas -->
+  <div class="alert alert-success text-center m-0">
+    🔔 Tenga cuidado con los mensajes sobre problemas de entrega que dicen ser de Correos de Ecuador.
+  </div>
+
+  <!-- Ofertas relámpago -->
+  <div class="container">
+    <div class="bg-danger text-white text-center py-2 mb-3">
+      <strong>⚡ Ofertas relámpago - Por tiempo limitado ⚡</strong>
+    </div>
+    <div class="row text-center g-3">
+      <div class="col-6 col-md-2">
+        <img src="https://img.kwcdn.com/product/fancy/73b580bd-1377-4594-99a8-96169f1eb8d7.jpg?imageView2/2/w/800/q/70/format/webp" class="img-fluid" alt="Monitor">
+        <p>$69,81 <small class="text-muted">$140,24</small></p>
+        <small>-44% tiempo limitado</small>
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="https://img.kwcdn.com/product/fancy/e0312e04-8dda-4215-8c94-bd5617c0fd5b.jpg?imageView2/2/w/800/q/70/format/webp" class="img-fluid" alt="Pantalón">
+        <p>$13,55 <small class="text-muted">$33,23</small></p>
+        <small>-59% tiempo limitado</small>
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="https://img.kwcdn.com/product/fancy/6a5f62a9-df3f-4f6c-8ce1-e9df52a13cab.jpg?imageView2/2/w/800/q/70/format/webp" class="img-fluid" alt="Falda árabe">
+        <p>$2,93 <small class="text-muted">$5,66</small></p>
+        <small>-26% tiempo limitado</small>
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="https://img.kwcdn.com/product/fancy/b24a76d0-217d-4750-80d7-4f5e517b1bd8.jpg?imageView2/2/w/800/q/70/format/webp" class="img-fluid" alt="Audífonos">
+        <p>$6,85 <small class="text-muted">$28,99</small></p>
+        <small>-76% tiempo limitado</small>
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="https://img.kwcdn.com/product/open/ee0f9b1030d74be8a246f40afe9002d0-goods.jpeg?imageView2/2/w/800/q/70/format/webp" class="img-fluid" alt="Bolígrafo">
+        <p>$4,83 <small class="text-muted">$7,23</small></p>
+        <small>-33% tiempo limitado</small>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ofertas de aniversario -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h5 class="text-danger fw-bold">🌙 OFERTAS DE ANIVERSARIO 🌙</h5>
+      <h6 class="fw-bold">PROVEEDORES <a href="#" class="float-end text-decoration-none">Ver más</a></h6>
+      <div class="d-flex overflow-auto gap-3">
+        <div class="text-center">
+          <img src="https://img.kwcdn.com/product/fancy/60aec98f-1a64-4ca3-8151-c33822a07ea8.jpg?imageView2/2/w/500/q/70/format/webp" class="img-fluid" alt="KurieTim">
+          <div class="fw-bold small">KurieTim</div>
+          <div class="text-muted small">2,5K+ Vendidos</div>
+        </div>
+        <div class="text-center">
+          <img src="https://img.kwcdn.com/product/1f66680980/5d9bd054-15f4-4822-8fe8-8c86832203fe_800x800.png?imageView2/2/w/500/q/70/format/webp" class="img-fluid" alt="TITAN A">
+          <div class="fw-bold small">TITAN A...</div>
+          <div class="text-muted small">2,4K+ Vendidos</div>
+        </div>
+        <div class="text-center">
+          <img src="https://img.kwcdn.com/product/open/9f63ae4c297e4e89b7c8e94d15c6cc2a-goods.jpeg?imageView2/2/w/500/q/70/format/webp" class="img-fluid" alt="Sumange">
+          <div class="fw-bold small">Sumange</div>
+          <div class="text-muted small">1,4K+ Vendidos</div>
+        </div>
+        <div class="text-center">
+          <img src="https://img.kwcdn.com/product/fancy/d595e324-f347-43ff-b3ce-5be3d5052de8.jpg?imageView2/2/w/500/q/70/format/webp" class="img-fluid" alt="Depushe">
+          <div class="fw-bold small">Depushe...</div>
+          <div class="text-muted small">2,6K+ Vendidos</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <h5 class="text-danger fw-bold">🌙 OFERTAS DE ANIVERSARIO 🌙</h5>
+      <h6 class="fw-bold">CATEGORÍAS <a href="#" class="float-end text-decoration-none">Ver más</a></h6>
+      <div class="d-flex overflow-auto gap-3">
+        <div class="text-center">
+          <img src="https://img.kwcdn.com/product/fancy/4136a8da-d133-41fa-9462-19c75f361f81.jpg?imageView2/2/w/800/q/70/format/webp" class="img-fluid" alt="Tecnología">
+          <div class="small">Hasta 99% off</div>
+          <div class="fw-bold small">Tecnología</div>
+        </div>
+        <div class="text-center">
+          <img src="https://img.kwcdn.com/product/fancy/84c2e096-ab3c-461a-9c40-9d020bee477b.jpg?imageView2/2/w/800/q/70/format/webp" class="img-fluid" alt="Joyería">
+          <div class="small">Hasta 99% off</div>
+          <div class="fw-bold small">Joyería y accesorios</div>
+        </div>
+        <div class="text-center">
+          <img src="https://img.kwcdn.com/product/fancy/c188c620-2a14-44b7-a771-378df7341f2b.jpg?imageView2/2/w/800/q/70/format/webp" class="img-fluid" alt="Ropa de hombre">
+          <div class="small">Desde $1.07</div>
+          <div class="fw-bold small">Ropa de hombre</div>
+        </div>
+        <div class="text-center">
+          <img src="https://img.kwcdn.com/product/fancy/22b33084-b5df-4501-98ec-cb48bfad283c.jpg?imageView2/2/w/800/q/70/format/webp" class="img-fluid" alt="Automotriz">
+          <div class="small">Hasta 99% off</div>
+          <div class="fw-bold small">Automotriz</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

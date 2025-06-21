@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eco-Mercado Uni</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #1b5e20;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+
+    .form-section {
+      background-color: white;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #1b5e20;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Eco‑Mercado Uni</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Login</a>
+      <a href="#">Publicar</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Productos recientes</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x180" alt="Producto 1">
+        <h3>Libro de Física</h3>
+        <p>Precio: $10</p>
+        <p>Estado: Usado</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x180" alt="Producto 2">
+        <h3>Mochila Universitaria</h3>
+        <p>Precio: $15</p>
+        <p>Estado: Nuevo</p>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>Publicar un artículo</h2>
+      <form>
+        <input type="text" placeholder="Título del producto" required>
+        <textarea rows="4" placeholder="Descripción" required></textarea>
+        <input type="number" placeholder="Precio en dólares" required>
+        <select required>
+          <option value="">Selecciona categoría</option>
+          <option>Libros</option>
+          <option>Electrónica</option>
+          <option>Ropa</option>
+          <option>Otros</option>
+        </select>
+        <select required>
+          <option value="">Estado del producto</option>
+          <option>Nuevo</option>
+          <option>Usado</option>
+        </select>
+        <input type="file" required>
+        <button type="submit">Publicar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Eco‑Mercado Uni – Proyecto académico</p>
+  </footer>
+</body>
+</html>

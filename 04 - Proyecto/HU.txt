@@ -1,0 +1,10 @@
+| HU-01 |	COMO Estudiante QUIERO	ver artículos por categoría	encontrar productos de interés	PARA  filtrar por categoría, estado
+| HU-02 |	COMO Estudiante QUIERO	hacer una oferta a un vendedor PARA	negociar el precio	Solo si estoy logueado y el artículo está activo
+| HU-03 |	COMO Vendedor QUIERO aceptar o rechazar ofertas	cerrar una venta PARA aceptar la oferta y  el artículo cambie de estado
+| HU-04 |	COMO Estudiante	QUIERO comunicarme con el vendedor PARA coordinar detalles y que se habilite un chat una vez que hago una oferta
+| HU-05 |	COMO Admin QUIERO ver artículos reportados o abusivos PARA moderar el contenido.
+| HU-06 |   COMO Vendedor QUIERO editar o eliminar mis publicaciones PARA corregir errores o retirar productos ya vendidos (Solo el autor puede editar o eliminar; disponible desde el perfil)
+| HU-07 |   COMO Estudiante QUIERO marcar artículos como favoritos PARA seguir publicaciones que me interesan (Se debe mostrar botón "Favorito” y un listado de favoritos en el perfil como tiktok)
+| HU-08 |   COMO Estudiante QUIERO  ver el historial de mis ofertas PARA revisar mis intentos de compra (Debe mostrar listado con estado "pendiente, aceptada, rechazada" y fechas)
+| HU-09 |   COMO Vendedor QUIERO recibir notificaciones por correo PARA mantenerme informado de ofertas y mensajes (Notificaciones para: oferta recibida, oferta aceptada/rechazada, nuevo mensaje)
+| HU-10 |   COMO Usuario no registrado QUIERO navegar por los productos publicados PARA conocer los beneficios de la plataforma (Se permite explorar pero se bloquean acciones como “ofertar” o “chatear” )
